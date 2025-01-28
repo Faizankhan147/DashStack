@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Slick Cdns -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Flag Icons Cdns -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Products Stocks</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar Start -->
+        <aside class="sideBar">
+            <div class="logo">
+                <h4><span>Dash</span>Stack</h4>
+            </div>
+            <div class="borderBottom">
+                <div class="sideBarTop">
+                    <a href="./dashboard.html" class="active"><i class="fa-solid fa-clock"></i>Dashboard</a>
+                    <a href="./product.html"><i class="fa-solid fa-table"></i>Products</a>
+                    <a href="./favorites.html"><i class="fa-regular fa-heart"></i>Favorites</a>
+                    <a href="./inbox.html"><i class="fa-solid fa-inbox"></i>Inbox</a>
+                    <a href="./order.html"><i class="fa-solid fa-list"></i>Order Lists</a>
+                    <a href="./stock.html"><i class="fa-brands fa-stack-exchange"></i>Product Stock</a>
+                </div>
+            </div>
+            <div class="borderBottom">
+                <div class="sideBarMid">
+
+                    <p>Pages</p>
+                    <a href="./pricing.html"><i class="fa-solid fa-gift"></i>Pricing</a>
+                    <a href="./calender.html"><i class="fa-regular fa-calendar"></i>Calender</a>
+                    <a href="./todo.html"><i class="fas fa-tasks"></i>To-Do</a>
+                    <a href="./contact.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+                    <a href="./invoice.html"><i class="fas fa-file-invoice"></i>Invoice</a>
+                    <a href="./element.html"><i class="fa-solid fa-chart-simple"></i>UI Elements</a>
+                    <a href="./team.html"><i class="fa-solid fa-user-group"></i>Team</a>
+                    <a href="./table.html"><i class="fa-solid fa-table-list"></i>Table</a>
+                </div>
+            </div>
+            <div class="sideBarBottom">
+                <a href="./setting.html"><i class="fa-solid fa-gear"></i>Setting</a>
+                <a href="./logout.html"><i class="fas fa-sign-out"></i>Logout</a>
+            </div>
+        </aside>
+        <!-- Sidebar End -->
+
+        <!-- Main Start -->
+
+        <div class="dashBoardRight">
+            <!-- Navbar Start -->
+            <nav class="navbar">
+                <div class="navLeft">
+                    <a href="#" class="menuBar">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <div class="searchBar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div class="navRight">
+                    <a href="#">
+                        <button type="button" class="position-relative notification">
+                            <i class="fa-solid fa-bell text-primary"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                6
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                    </a>
+
+                    <!-- Lang Dropdown Start -->
+                    <div class="dropdown">
+                        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false"><span
+                                class="flag-icon flag-icon-us me-1"></span> <span>English</span></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item active" href="#"><span
+                                        class="flag-icon flag-icon-us me-1"></span> <span>English</span></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-fr me-1"></span>
+                                    <span>French</span></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-es me-1"></span>
+                                    <span>Spanich</span></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-sa me-1"></span>
+                                    <span>Arabic</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Lang Dropdown End -->
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle admin" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="adminImg">
+                                <img src="./img/admin img.svg" alt="">
+                            </div>
+                            <div class="adminName">
+                                <p>Moni Roy</p>
+                                <p>Admin</p>
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">More</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- Main Container Start -->
+            <div class="main">
+                <h1>Product Stock</h1>
+
+                <!-- Stock Slider Start -->
+                <div class="stockSlider">
+                    <div><img src="./img/Featured Image.svg" alt=""></div>
+                    <div><img src="./img/Featured Image.svg" alt=""></div>
+                    <div><img src="./img/Featured Image.svg" alt=""></div>
+                </div>
+                <!-- Stock Slider End -->
+
+
+                <!-- Product Slider Start -->
+                <div class="productSliders">
+                    <!-- Slider 1 -->
+                    <div class="productSlider">
+                        <div class="pSlider">
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                        </div>
+                        <div class="sliderDetail">
+                            <div class="detailTop">
+                                <p>Apple Watch Series 4 <span class="text-primary">$120.00</span></p>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="rating">
+                                <span onclick="gfg(1)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(2)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(3)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(4)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(5)" class="star">&#9733;
+                                </span>
+                                <p>(131)</p>
+                            </div>
+                            <div class="sliderBtn">
+                                <a href="#">Edit Product</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider 2 -->
+                    <div class="productSlider">
+                        <div class="pSlider">
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                        </div>
+                        <div class="sliderDetail">
+                            <div class="detailTop">
+                                <p>Apple Watch Series 4 <span class="text-primary">$120.00</span></p>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="rating">
+                                <span onclick="gfg(1)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(2)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(3)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(4)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(5)" class="star">&#9733;
+                                </span>
+                                <p>(131)</p>
+                            </div>
+                            <div class="sliderBtn">
+                                <a href="#">Edit Product</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slider 3 -->
+                    <div class="productSlider">
+                        <div class="pSlider">
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                            <div><img src="./img/Bitmap.svg" alt=""></div>
+                        </div>
+                        <div class="sliderDetail">
+                            <div class="detailTop">
+                                <p>Apple Watch Series 4 <span class="text-primary">$120.00</span></p>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="rating">
+                                <span onclick="gfg(1)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(2)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(3)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(4)" class="star">&#9733;
+                                </span>
+                                <span onclick="gfg(5)" class="star">&#9733;
+                                </span>
+                                <p>(131)</p>
+                            </div>
+                            <div class="sliderBtn">
+                                <a href="#">Edit Product</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Slider End -->
+
+            </div>
+            <!-- Main Container End -->
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Slick Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+        integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Flag Icon Cdns -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        $('.stockSlider').slick({
+            autoplay: true,
+            infinite: true,
+            loop: true,
+            arrows: false,
+        });
+
+        $('.pSlider').slick({
+            autoplay: false,
+            infinite: true,
+            loop: false,
+        });
+    </script>
+
+    <script src="./js/rating.js"></script>
+</body>
+
+</html>
